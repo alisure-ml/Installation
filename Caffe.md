@@ -42,19 +42,19 @@
 
 3. 修改配置文件
   * 复制配置文件
-    ```
-    cp Makefile.config.example Makefile.config
-    ```
+  ```
+  cp Makefile.config.example Makefile.config
+  ```
   * 修改配置项
-    ```
-    # 取消注释
-    CPU_ONLY := 1
-    OPENCV_VERSION := 3
+  ```
+  # 取消注释
+  CPU_ONLY := 1
+  OPENCV_VERSION := 3
  
-    # 包含和库路径保持同下面一致
-    INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
-    LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial /usr/local/share/OpenCV/3rdparty/lib/
-    ```
+  # 包含和库路径保持同下面一致
+  INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+  LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial /usr/local/share/OpenCV/3rdparty/lib/
+  ```
 4. 编译运行
   ```
   make all
