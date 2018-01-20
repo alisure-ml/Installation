@@ -1,0 +1,77 @@
+### 安装Caffe
+
+* GitHub地址： [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe)
+* 官方安装地址： [http://caffe.berkeleyvision.org/installation.html](http://caffe.berkeleyvision.org/installation.html)
+
+下载Caffe:
+  ```
+  git clone https://github.com/BVLC/caffe.git
+  cd caffe
+  ```
+
+
+### Windows 安装
+
+> GitHub地址： [https://github.com/BVLC/caffe/tree/windows](https://github.com/BVLC/caffe/tree/windows)
+
+* 有预编译版本，下载后可直接安装。
+
+
+### Ubuntu 安装
+
+* GitHub地址： [https://github.com/BVLC/caffe](https://github.com/BVLC/caffe)
+* 官方安装地址： [http://caffe.berkeleyvision.org/install_apt.html](http://caffe.berkeleyvision.org/install_apt.html)
+
+官方安装步骤如下：
+1. [http://caffe.berkeleyvision.org/install_apt.html](http://caffe.berkeleyvision.org/install_apt.html)
+2. [http://caffe.berkeleyvision.org/installation.html#compilation](http://caffe.berkeleyvision.org/installation.html#compilation)
+
+16.04 python3.5 安装步骤如下：
+1. 安装依赖
+  ```
+  sudo apt-get update
+  sudo apt-get install -y build-essential cmake git pkg-config
+  sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
+  sudo apt-get install -y libatlas-base-dev
+  sudo apt-get install -y --no-install-recommends libboost-all-dev
+  sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
+  ```
+
+2. 安装OpenCV3
+  * 详见opencv.md
+
+3. 修改配置文件
+  * 复制配置文件
+    ```
+      cp Makefile.config.example Makefile.config
+    ```
+  * 修改配置项
+    ```
+      # 取消注释
+      CPU_ONLY := 1
+      OPENCV_VERSION := 3
+ 
+      # 包含和库路径保持同下面一致
+      INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+      LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial /usr/local/share/OpenCV/3rdparty/lib/
+    ```
+4. 编译运行
+  ```
+  make all
+  make test
+  make runtest
+  make pycaffe
+  ```
+  
+5. 配置环境变量
+  ```
+  vim ~/.bashrc
+  ```
+  ```
+  export PYTHONPATH=/caffe path/python:$PYTHONPATH
+  ```
+  
+
+* reference
+  * [深度学习caffe:Ubuntu16.04安装指南(2)](http://www.cnblogs.com/AbcFly/p/6306201.html)
+
