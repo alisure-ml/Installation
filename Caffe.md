@@ -53,7 +53,7 @@
  
   # 包含和库路径保持同下面一致
   INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
-  LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial /usr/local/share/OpenCV/3rdparty/lib/
+  LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial /usr/share/OpenCV/3rdparty/lib/
   ```
 4. 编译运行
   ```
@@ -73,7 +73,29 @@
 
 * 遇到的问题
 
-1. make pycaffe
+1. 编译时出现OpenCV3问题（OpenCV已成功安装）
+  ```
+  cv.imread().... 不存在。。。
+  ```
+  原因电脑上OpenCV版本有点多（乱），没有设置好OpenCV。
+  
+  * 解决办法   
+  修改这一行，将`/usr/share/OpenCV/3rdparty/lib/`去掉：
+  ```
+  LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial
+  ```
+  然后，解开这一行的注释
+  ```
+  USE_PKG_CONFIG := 1
+  ```
+  
+  * linux下查看opencv版本
+  ```
+  pkg-config --modversion opencv
+  ```
+  
+
+2. make pycaffe
   ```
   /usr/bin/ld: 找不到 -lboost_python3
   ```
@@ -84,9 +106,18 @@
   ```
   sudo ln -s libboost_python-py35.so libboost_python3.so 
   ```
+  
   * reference 
     * [python3编译caffe错误:cannot find -lboost_python3](http://blog.csdn.net/songyu0120/article/details/77895373)
 
+
+3. make: Nothing to be done for `all'
+
+  * 解决办法
+  ```
+  make clean
+  ```
+  
 
 * reference
   * [深度学习caffe:Ubuntu16.04安装指南(2)](http://www.cnblogs.com/AbcFly/p/6306201.html)
