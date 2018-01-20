@@ -70,7 +70,23 @@
   ```
   export PYTHONPATH=/caffe path/python:$PYTHONPATH
   ```
+
+* 遇到的问题
+
+1. make pycaffe
+  ```
+  /usr/bin/ld: 找不到 -lboost_python3
+  ```
+  首先去/usr/lib/x86_64-linux-gnu目录下查看是否有python3版本的libboost，
+  如果有类似libboost_python35.so但是没有libboost_python3.so则需要手动建立连接。 
   
+  * 解决办法
+  ```
+  sudo ln -s libboost_python-py35.so libboost_python3.so 
+  ```
+  * reference 
+    * [python3编译caffe错误:cannot find -lboost_python3](http://blog.csdn.net/songyu0120/article/details/77895373)
+
 
 * reference
   * [深度学习caffe:Ubuntu16.04安装指南(2)](http://www.cnblogs.com/AbcFly/p/6306201.html)
