@@ -23,25 +23,24 @@
   sudo reboot
   ```
 
-x. 禁用nouveau驱动（具体见下面的`Problem`）
+5. 禁用nouveau驱动（具体见下面的`Problem`，不确定是否是可选）
 
-5. 重新安装驱动
+6. 重新安装驱动
   ```
   CTRL + ALT + F1
   sudo service lightdm stop
   sudo chmod +x NVIDIA-Linux-x86_64-xxx.xx.run -no-x-check -no-nouveau-check -no-opengl-files
   ```
 
-6. 启动`lightdm`
+7. 启动`lightdm`
   ```
   sudo service lightdm restart
   ```
 
-7. 验证是否安装成功
+8. 验证是否安装成功
   ```
   nvidia-smi
   ```
-
 
 
 ### Problem
@@ -81,7 +80,6 @@ x. 禁用nouveau驱动（具体见下面的`Problem`）
   lsmod | grep nouveau
   ```
   
-
 
 ### Reference
 
