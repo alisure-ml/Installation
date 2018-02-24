@@ -23,6 +23,8 @@
   sudo reboot
   ```
 
+x. 禁用nouveau驱动（具体见下面的`Problem`）
+
 5. 重新安装驱动
   ```
   CTRL + ALT + F1
@@ -34,7 +36,13 @@
   ```
   sudo service lightdm restart
   ```
-  
+
+7. 验证是否安装成功
+  ```
+  nvidia-smi
+  ```
+
+
 
 ### Problem
 
@@ -50,8 +58,38 @@
   下载驱动时可能找不到版本，比如我的是`GeForce GTX TITAN X`/`Ubuntu 16.04`，直接查找找不到对应的驱动。
   我就随便多选了几个，发现有一个支持该GPU，然后就下载使用了。
   
+* 在解决问题中禁用了nouveau驱动
+  1. 用`vim`打开`blacklist.conf`文件
+  ```
+  sudo vim /etc/modprobe.d/blacklist.conf
+  ```
+  2. 在文末添加下列内容
+  ```
+  blacklist nouveau
+  options nouveau modeset=0
+  ```
+  3. 使配置生效
+  ```
+  sudo update-initramfs -u
+  ```
+  4. 重启
+  ```
+  sudo reboot
+  ```
+  5. 验证是否禁用成功（没有输出即成功）
+  ```
+  lsmod | grep nouveau
+  ```
+  
+
 
 ### Reference
+
 * [Ubuntu 16.04 用户登录界面死循环问题的解决](http://blog.csdn.net/ssmixi/article/details/73483795)
+
 * [Ubuntu系统安装CUDA或NVIDIA驱动后出现循环登录问题的Solution (附：building kernel modules error)](http://blog.csdn.net/xl928471061/article/details/78130165)
+
 * [安装Nvidia显卡驱动和CUDA](http://blog.csdn.net/bluewhalerobot/article/details/73658267)
+
+* [Ubuntu 16.04安装NVIDIA驱动](http://blog.csdn.net/cosmoshua/article/details/76644029)
+
