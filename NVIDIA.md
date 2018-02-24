@@ -36,5 +36,22 @@
   ```
   
 
+### Problem
+
+* `Building kernel modules`出错
+  安装驱动过程中出现下列错误：
+  ```
+  ERROR: An error occurred while performing the step: "Building kernel modules". See /var/log/nvidia-installer.log for details.
+  ```
+  可能的原因：驱动版本和系统内核版本不匹配。   
+  解决办法：下载最新版本的驱动（或者下载补丁）
+
+* 驱动的版本  
+  下载驱动时可能找不到版本，比如我的是`GeForce GTX TITAN X`/`Ubuntu 16.04`，直接查找找不到对应的驱动。
+  我就随便多选了几个，发现有一个支持该GPU，然后就下载使用了。
+  
+
 ### Reference
 * [Ubuntu 16.04 用户登录界面死循环问题的解决](http://blog.csdn.net/ssmixi/article/details/73483795)
+* [Ubuntu系统安装CUDA或NVIDIA驱动后出现循环登录问题的Solution (附：building kernel modules error)](http://blog.csdn.net/xl928471061/article/details/78130165)
+* [安装Nvidia显卡驱动和CUDA](http://blog.csdn.net/bluewhalerobot/article/details/73658267)
