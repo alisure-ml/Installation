@@ -29,7 +29,8 @@
   ```
   CTRL + ALT + F1
   sudo service lightdm stop
-  sudo chmod +x NVIDIA-Linux-x86_64-xxx.xx.run -no-x-check -no-nouveau-check -no-opengl-files
+  sudo chmod +x NVIDIA-Linux-x86_64-xxx.xx.run
+  sudo ./NVIDIA-Linux-x86_64-xxx.xx.run -no-x-check -no-nouveau-check -no-opengl-files
   ```
 
 7. 启动`lightdm`
