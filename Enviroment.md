@@ -75,6 +75,63 @@ sudo gedit ~/.bashrc
 直接使用`export`指令添加。
 
 
+### 常用指令
+
+* 设置新的环境变量
+```
+export MYNAME="ALISURE"
+```
+
+* 查看显示环境变量
+```
+echo $MYNAME
+```
+
+* 修改环境变量
+```
+MYNAME="ALISURE2"
+```
+
+* 查看所有环境变量
+```
+env
+```
+
+* 删除一个环境变量
+```
+unset MYNAME
+```
+
+
+### 常用环境变量
+
+* PATH:指定命令的搜索路径
+```
+echo $PATH
+```
+
+通过结果可以看出，路径由`:`分隔，所以可以用`export PATH=$PATH:路径`添加搜索路径。   
+这些搜索路径都是一些可以找到可执行程序的目录列表。
+
+* HOME:指定用户的主工作目录
+```
+echo $HOME
+```
+
+用户登录到Linux系统中时的默认目录，即“~”。
+
+* HISTSIZE:保存历史命令记录的条数
+```
+echo $HISTSIZE
+```
+
+输入的指令都会被系统保存保存在用户工作主目录“~”下的隐藏文件.bash_history中,可以通过下列指令查看。
+
+```
+history
+```
+
+
 
 ### Reference
 
