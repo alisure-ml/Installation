@@ -1,22 +1,15 @@
 
 ## Node
 
+## 下载node
 
-## Install node
-```
-node
-# The program 'node' is currently not installed. You can install it by typing:
-# sudo apt install nodejs-legacy
+[https://nodejs.org/en/](https://nodejs.org/en/)
 
-sudo apt install nodejs-legacy
-```
-
-## Install npm
+## Install node and npm
 
 ```
-npm
-# The program 'npm' is currently not installed. You can install it by typing:
-# sudo apt install npm
-
-sudo apt install npm
+tar xf node-....-linux-x64
+cd node-....-linux-x64
+ln -s ~/alisure/node/node-....-linux-x64/bin/node /usr/local/bin/node
+ln -s ~/alisure/node/node-....-linux-x64/bin/npm /usr/local/bin/npm
 ```
