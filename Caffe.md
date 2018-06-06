@@ -8,6 +8,10 @@
   git clone https://github.com/BVLC/caffe.git
   cd caffe
   ```
+  
+### 注意！！！！
+
+* 注意编译的时候python的版本。一定要在执行之前查看python的版本。毕竟工作站中的Linux系统的Python可能会比较乱，原因大家都懂的。
 
 
 ### Windows 安装
@@ -117,7 +121,9 @@
   ```
   make clean
   ```
-  
+
+4. 注意编译的时候python的版本。一定要在执行之前查看python的版本。毕竟工作站中的Linux系统的Python可能会比较乱，原因大家都懂的。
+
 
 * reference
   * [深度学习caffe:Ubuntu16.04安装指南(2)](http://www.cnblogs.com/AbcFly/p/6306201.html)
