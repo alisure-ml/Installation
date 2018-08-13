@@ -77,6 +77,8 @@
 
 * 遇到的问题
 
+0. 注意权限问题！！！
+
 1. 编译时出现OpenCV3问题（OpenCV已成功安装）
   ```
   cv.imread().... 不存在。。。
@@ -123,6 +125,17 @@
   ```
 
 4. 注意编译的时候python的版本。一定要在执行之前查看python的版本。毕竟工作站中的Linux系统的Python可能会比较乱，原因大家都懂的。
+
+
+5. fatal error: hdf5.h:没有那个文件或目录
+
+  * 解决办法
+  ```
+  将下句修改：
+  INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
+  为：
+  INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+  ```
 
 
 * reference
