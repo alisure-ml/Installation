@@ -26,6 +26,9 @@
 5. 禁用nouveau驱动（具体见下面的`Problem`，不确定是否是可选）
 
 6. 重新安装驱动
+  
+  下载驱动：[https://www.nvidia.com/Download/index.aspx](https://www.nvidia.com/Download/index.aspx)
+
   ```
   CTRL + ALT + F1
   sudo service lightdm stop
