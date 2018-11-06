@@ -84,6 +84,10 @@
   lsmod | grep nouveau
   ```
   
+* 系统更新后加载不了桌面
+
+  解决方法见链接：[ubuntu16.04更新系统后桌面出错的解决办法](https://blog.csdn.net/zhangxue2017/article/details/79937114)
+
 
 ### Reference
 
