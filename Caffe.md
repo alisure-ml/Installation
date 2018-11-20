@@ -42,7 +42,7 @@
   ```
 
 2. 安装OpenCV3
-  * 详见opencv.md
+  * 详见[opencv.md](https://github.com/alisure-ml/Installation/blob/master/opencv.md)
 
 3. 修改配置文件
   * 复制配置文件
