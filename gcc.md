@@ -23,7 +23,7 @@ ls /usr/bin/gcc*
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-6
 ```
 
-方法二：
+方法二：创建软链接：
 ```
 sudo ln -s /usr/bin/gcc-7 /usr/bin/gcc -f
 sudo ln -s /usr/bin/gcc-ar-7 /usr/bin/gcc-ar -f
