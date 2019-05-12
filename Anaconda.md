@@ -139,6 +139,11 @@ conda env create -f environment.yaml
 > [configuration/use-condarc](https://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html)
 
 
+## 清华大学的源
+
+> [pypi 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
+
+
 ## Reference
 
 * [致Python初学者：Anaconda入门使用指南](http://python.jobbole.com/87522/)
