@@ -132,6 +132,13 @@ conda env create -f environment.yaml
 ```
 
 
+## condarc
+
+配置代理 `～/.condarc`
+
+> [configuration/use-condarc](https://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html)
+
+
 ## Reference
 
 * [致Python初学者：Anaconda入门使用指南](http://python.jobbole.com/87522/)
