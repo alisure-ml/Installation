@@ -112,5 +112,8 @@ sudo mount -o umask=000 /dev/sdc1 /home/ubuntu/ALISURE
 
 7. 挂载后文件名汉字乱码
 
-
+> 挂载时加上参数`-o iocharset=utf8`
+```
+sudo mount -o umask=000 -o iocharset=utf8 /dev/sdc1 /home/ubuntu/ALISURE
+```
 
