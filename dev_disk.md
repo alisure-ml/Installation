@@ -1,54 +1,6 @@
 # 磁盘管理
 
 
-## 一些命令
-
-### gparted
-
-> gparted是ubuntu上很好的分区调整工具
-
-* 安装
-```
-sudo apt-get install gparted
-```
-
-* 使用
-```
-sudo gparted
-```
-
-
-### df
-
-* 常用命令, 可以查看各个盘分区使用及挂载情况. 
-```
-df
-```
-
-* 以GB之类显示而非字节
-```
-df -h
-```
-
-* 查看分区的文件系统类型
-```
-df -T
-```
-
-### lsblk
-
-可以查看各个硬盘以及相应的分区和挂载情况
-```
-lsblk
-```
-
-### fdisk
-可以查看各个硬盘的分区, 扇区情况等更详尽的信息
-```
-sudo fdisk -l
-```
-
-
 ## 挂载磁盘
 
 > 假设设备为`/dev/sdc1`,要挂载的地方为`/home/ubuntu/ALISURE`
@@ -116,4 +68,68 @@ sudo mount -o umask=000 /dev/sdc1 /home/ubuntu/ALISURE
 ```
 sudo mount -o umask=000 -o iocharset=utf8 /dev/sdc1 /home/ubuntu/ALISURE
 ```
+
+8. 弹出磁盘
+
+> 执行弹出之后，执行`sudo fdisk -l`就识别不了该磁盘了，因为已经弹出来了重新拔出插上才可以。
+
+```
+sudo eject /dev/sdc1
+```
+
+
+## 一些命令
+
+### gparted
+
+> gparted是ubuntu上很好的分区调整工具
+
+* 安装
+```
+sudo apt-get install gparted
+```
+
+* 使用
+```
+sudo gparted
+```
+
+
+### df
+
+* 常用命令, 可以查看各个盘分区使用及挂载情况. 
+```
+df
+```
+
+* 以GB之类显示而非字节
+```
+df -h
+```
+
+* 查看分区的文件系统类型
+```
+df -T
+```
+
+### lsblk
+
+可以查看各个硬盘以及相应的分区和挂载情况
+```
+lsblk
+```
+
+### fdisk
+可以查看各个硬盘的分区, 扇区情况等更详尽的信息
+```
+sudo fdisk -l
+```
+
+## Inference
+
+* [Ubuntu--硬盘的挂载与卸载](https://www.cnblogs.com/cappuccinom/p/8971999.html)
+* [linux系统挂载U盘，中文文件名乱码解决方案](https://www.cnblogs.com/zhouqinxiong/p/3497293.html)
+* [解决U盘挂载到linux上没有写和执行的权限](https://blog.csdn.net/zgy0808/article/details/51082087)
+* [Ubuntu命令行弹出光驱的方法](https://www.cnblogs.com/QuLory/archive/2012/10/23/2735489.html)
+
 
