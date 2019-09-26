@@ -101,7 +101,16 @@ sudo vim /etc/fstab
 
 6. 挂载后设置权限
 
+> 两种解决方案
+
+1. FAT32不支持POSIX权限系统，可以把FAT32格式的U盘格式化为NTFS、Ext3或Ext4格式
+
+2. 或者是挂载时加上参数`-o umask=000`: 
+```
+sudo mount -o umask=000 /dev/sdc1 /home/ubuntu/ALISURE
 ```
 
-```
+7. 挂载后文件名汉字乱码
+
+
 
