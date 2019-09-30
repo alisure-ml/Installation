@@ -38,6 +38,13 @@ sudo apt-get install upgrade
 conda -n alisure36tf python=3.6
 ```
 
+* `pypi`镜像：[pypi 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
+
+```
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 
 ## 安装NVIDIA显卡驱动
 
