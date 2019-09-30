@@ -9,10 +9,13 @@
 
 * 更新软件
 
-* 安装`vim`
+* 安装`vim`,`gcc`,`make`,`lightdm`
 
 ```
 sudo apt install vim
+sudo apt install gcc
+sudo apt install make
+sudo apt install lightdm
 ```
 
 
