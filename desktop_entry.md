@@ -14,7 +14,7 @@ Version=1.0
 Name=PyCharm
 Exec=/home/ubuntu/pycharm-2019.2.3/bin/pycharm.sh
 Terminal=false
-Icon=/home/ubuntu/pycharm-2019.2.3/bin/pycharm.png（这个是图标）
+Icon=/home/ubuntu/pycharm-2019.2.3/bin/pycharm.png
 Type=Application
 Categories=Development
 ```
