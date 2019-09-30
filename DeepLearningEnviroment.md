@@ -56,3 +56,8 @@ conda -n alisure36tf python=3.6
 * 安装CUDA，请参考：[CUDA.md](https://github.com/alisure-ml/Installation/blob/master/CUDA.md)
 
 
+## 安装cudnn
+
+* 请参考：[install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
+
+
