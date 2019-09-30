@@ -20,6 +20,13 @@ sudo apt install make
 sudo apt install lightdm
 ```
 
+* 更新`apt`
+
+```
+sudo apt-get install update
+sudo apt-get install upgrade
+```
+
 
 ## 安装Anaconda.md
 
@@ -44,7 +51,7 @@ conda -n alisure36tf python=3.6
 
 ## 安装CUDA
 
-* 下载CUDA
+* 下载CUDA：[cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
 
 * 安装CUDA，请参考：[CUDA.md](https://github.com/alisure-ml/Installation/blob/master/CUDA.md)
 
