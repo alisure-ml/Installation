@@ -61,3 +61,20 @@ conda -n alisure36tf python=3.6
 * 请参考：[install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
 
 
+## 安装`pycharm`
+
+* 下载最新版：[pycharm](https://www.jetbrains.com/pycharm/download/#section=linux)
+
+* 解压缩到相应的目录
+
+* 添加程序快捷方式：请参考：[desktop_entry.md](https://github.com/alisure-ml/Installation/blob/master/desktop_entry.md)
+  
+  还需要添加到收藏夹。
+  
+* 破解
+  1. [Pycharm2019专业版激活码，亲测有效！](https://www.jianshu.com/p/164426c82483)
+  2. [学生授权申请方式](https://sales.jetbrains.com/hc/zh-cn/articles/207154369-%E5%AD%A6%E7%94%9F%E6%8E%88%E6%9D%83%E7%94%B3%E8%AF%B7%E6%96%B9%E5%BC%8F)
+  3. [lanyus](http://idea.lanyus.com/)
+
+
+
