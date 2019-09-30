@@ -1,6 +1,7 @@
 # 安装深度学习环境
 
 
+
 ## 安装系统
 
 * 制作系统盘
@@ -28,6 +29,7 @@ sudo apt-get install upgrade
 ```
 
 
+
 ## 安装Anaconda.md
 
 * 下载、安装Anaconda：请参考[Anaconda.md](https://github.com/alisure-ml/Installation/blob/master/Anaconda.md)
@@ -44,6 +46,7 @@ conda create -n alisure36tf python=3.6
 pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
 
 
 ## 安装NVIDIA显卡驱动
@@ -65,9 +68,11 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 * 安装CUDA，请参考：[CUDA.md](https://github.com/alisure-ml/Installation/blob/master/CUDA.md)
 
 
+
 ## 安装cudnn
 
-* 请参考：[install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
+* 请参考：[CUDA.md/安装cudnn](https://github.com/alisure-ml/Installation/blob/master/CUDA.md#%E5%AE%89%E8%A3%85cudnn)
+
 
 
 ## 安装`pycharm`
@@ -84,6 +89,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   1. [Pycharm2019专业版激活码，亲测有效！](https://www.jianshu.com/p/164426c82483)
   2. [学生授权申请方式](https://sales.jetbrains.com/hc/zh-cn/articles/207154369-%E5%AD%A6%E7%94%9F%E6%8E%88%E6%9D%83%E7%94%B3%E8%AF%B7%E6%96%B9%E5%BC%8F)
   3. [lanyus](http://idea.lanyus.com/)
+
 
 
 ## `Tensorflow`环境
@@ -107,6 +113,7 @@ a = tf.constant(1)
 b = tf.constant(2) 
 print(sess.run(a+b)) 
 ```
+
 
 
 ## `PyTorch`环境
