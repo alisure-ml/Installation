@@ -50,6 +50,36 @@ sudo make
 
 ### 安装cudnn
 
+1. 下载对应版本的[cudnn](https://developer.nvidia.com/cudnn)  
+
+2. 需要下载两个版本，runtime版和developer版
+
+```
+cuDNN Runtime Library for Ubuntu18.04 (Deb)
+cuDNN Developer Library for Ubuntu18.04 (Deb)
+```
+
+3. 将下载的文件格式改为.tgz，然后解压
+
+4. 一个里版本里面有头文件(在include中)，一个里面有动态连接文件（在lib中）
+
+  * 将`include`中头文件`cudnn.h`拷贝到`/usr/local/cuda/lib64`
+  * 将`lib`中的动态连接文件拷贝到`/usr/local/cuda/lib64`
+
+5. 添加环境变量
+
+```
+sudo gedit ~/.bashrc
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+
+6. 对拷贝进来的两个动态连接库创建软链接
+
+```
+cd /usr/local/cuda/lib64/
+sudo ln -s libcudnn.so.7 libcudnn.so`,`sudo ln -s libcudnn.so.7.0.5 libcudnn.so.7
+```
+
 参考：[Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
 
 ### Pycharm中找不到cuda
