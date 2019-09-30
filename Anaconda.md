@@ -109,10 +109,20 @@ conda create -n py2 python=2.7 pandas
 source activate env_name
 ```
 
+或者
+```
+conda activate env_name
+```
+
 退出当前环境：
 
 ```
 source deactivate
+```
+
+或者
+```
+conda deactivate
 ```
 
 另外注意，在 Windows 系统中，使用 activate env_name 和 deactivate 来进入和退出某个环境。
