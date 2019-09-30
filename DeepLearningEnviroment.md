@@ -35,7 +35,7 @@ sudo apt-get install upgrade
 * 创建环境
 
 ```
-conda -n alisure36tf python=3.6
+conda create -n alisure36tf python=3.6
 ```
 
 * `pypi`镜像：[pypi 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
@@ -59,6 +59,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ## 安装CUDA
 
 * 下载CUDA：[cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
+
+选择版本，例如`cuda_10.0.130_410.48_linux.run`。
 
 * 安装CUDA，请参考：[CUDA.md](https://github.com/alisure-ml/Installation/blob/master/CUDA.md)
 
@@ -84,4 +86,45 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   3. [lanyus](http://idea.lanyus.com/)
 
 
+## `Tensorflow`环境
+
+* 创建环境
+
+```
+conda create -n alisure36tf python=3.6
+conda activate alisure36tf
+
+pip install pip -U
+pip install tensorflow-gpu
+```
+
+* 测试环境
+
+```
+import tensorflow as tf 
+sess = tf.Session() 
+a = tf.constant(1) 
+b = tf.constant(2) 
+print(sess.run(a+b)) 
+```
+
+
+## `PyTorch`环境
+
+* 创建环境
+
+```
+conda create -n alisure36torch python=3.6
+conda activate alisure36torch
+
+pip install pip -U
+conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
+```
+
+* 测试环境
+
+```
+import torch
+print(torch.cuda.is_available())
+```
 
