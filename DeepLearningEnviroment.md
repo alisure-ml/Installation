@@ -9,6 +9,8 @@
 
 * 更新软件
 
+启动系统后会自动弹出更新软件，或者到设置中进行更新检查。
+
 * 安装`vim`,`gcc`,`make`,`lightdm`
 
 ```
@@ -42,5 +44,8 @@ conda -n alisure36tf python=3.6
 
 ## 安装CUDA
 
+* 下载CUDA
+
+* 安装CUDA，请参考：[CUDA.md](https://github.com/alisure-ml/Installation/blob/master/CUDA.md)
 
 
