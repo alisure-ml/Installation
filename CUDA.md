@@ -37,6 +37,17 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH　　
 sudo reboot
 ```
 
+* 测试安装是否成功
+
+```
+cd /usr/local/cuda/samples/1_Utilities/deviceQuery
+sudo make
+./deviceQuery
+```
+
+如果显示关于GPU的信息就是成功了。
+
+
 ### 安装cudnn
 
 参考：[Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
