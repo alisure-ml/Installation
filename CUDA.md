@@ -78,7 +78,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ```
 cd /usr/local/cuda/lib64/
 sudo ln -s libcudnn.so.7 libcudnn.so
-sudo ln -s libcudnn.so.7.x.x libcudnn.so.7
+# sudo ln -s libcudnn.so.7.x.x libcudnn.so.7
 ```
 
 参考：[Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
