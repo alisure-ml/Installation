@@ -21,14 +21,14 @@ sudo sh cuda_9.0.176_384.81_linux.run
 * 配置环境变量，运行如下命令打开profile文件
 
 ```
-sudo gedit  /etc/profile
+sudo gedit /etc/profile
 ```
 
 打开文件后在文件末尾添加路径，也就是安装目录，命令如下：
 
 ```
 export PATH=/usr/local/cuda-9.0/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH　　
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
 ```
 
 保存，然后重启电脑:
