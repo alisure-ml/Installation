@@ -126,7 +126,7 @@ conda create -n alisure36torch python=3.6
 conda activate alisure36torch
 
 pip install pip -U
-pip install pytorch torchvision cudatoolkit=10.0 -c pytorch
+pip install torch torchvision
 ```
 
 * 测试环境
