@@ -12,13 +12,14 @@
 
 启动系统后会自动弹出更新软件，或者到设置中进行更新检查。
 
-* 安装`vim`,`gcc`,`make`,`lightdm`
+* 安装`vim`,`gcc`,`make`,`lightdm`,`git`
 
 ```
 sudo apt install vim
 sudo apt install gcc
 sudo apt install make
 sudo apt install lightdm
+sudo apt install git
 ```
 
 * 更新`apt`
