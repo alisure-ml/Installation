@@ -90,7 +90,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
   1. [Pycharm2019专业版激活码，亲测有效！](https://www.jianshu.com/p/164426c82483)
   2. [学生授权申请方式](https://sales.jetbrains.com/hc/zh-cn/articles/207154369-%E5%AD%A6%E7%94%9F%E6%8E%88%E6%9D%83%E7%94%B3%E8%AF%B7%E6%96%B9%E5%BC%8F)
   3. [lanyus](http://idea.lanyus.com/)
-
+  4. [http://lookdiv.com](http://lookdiv.com) 钥匙：1211268069
 
 
 ## `Tensorflow`环境
