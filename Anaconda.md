@@ -1,22 +1,33 @@
 # Anaconda
 
 
-## 什么是 Anaconda
+## 清华大学的源
 
-> Anaconda是专注于数据分析的Python发行版本，包含了conda、Python等190多个科学包及其依赖项。
+> [pypi 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
 
-conda 是开源包（packages）和虚拟环境（environment）的管理系统。
+* 临时使用
 
-* packages 管理： 可以使用 conda 来安装、更新 、卸载工具包 ，并且它更关注于数据科学相关的工具包。
-* 虚拟环境管理： 在conda中可以建立多个虚拟环境，用于隔离不同项目所需的不同版本的工具包，以防止版本上的冲突。
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+```
+
+注意，`simple`不能少, 是`https`而不是`http`。
 
 
-## Anaconda 的优点
+* 设为默认(推荐使用该方法)
 
-> 省时省心、分析利器。
+升级`pip`到最新的版本(>=10.0.0)后进行配置：
 
-* 省时省心： Anaconda通过管理工具包、开发环境、Python版本，大大简化了你的工作流程。不仅可以方便地安装、更新、卸载工具包，而且安装时能自动安装相应的依赖包，同时还能使用不同的虚拟环境隔离不同要求的项目。
-* 分析利器： 适用于企业级大数据分析的Python工具。其包含了720多个数据科学相关的开源包，在数据可视化、机器学习、深度学习等多方面都有涉及。不仅可以做数据分析，甚至可以用在大数据和人工智能领域。
+```
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+如果您到`pip`默认源的网络连接较差，临时使用本镜像站来升级`pip`：
+
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+```
 
 
 ## 安装
@@ -38,7 +49,7 @@ conda upgrade --all
 ```
 
 
-## 如何管理Python包？
+## 管理Python包
 
 安装一个 package：
 
@@ -85,7 +96,7 @@ conda  search search_term
 ```
 
 
-## 如何管理Python环境？
+## 管理Python环境
 
 默认的环境是 root，你也可以创建一个新环境：
 
@@ -159,9 +170,22 @@ conda env create -f environment.yaml
 > [configuration/use-condarc](https://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html)
 
 
-## 清华大学的源
+## 什么是 Anaconda
 
-> [pypi 镜像使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
+> Anaconda是专注于数据分析的Python发行版本，包含了conda、Python等190多个科学包及其依赖项。
+
+conda 是开源包（packages）和虚拟环境（environment）的管理系统。
+
+* packages 管理： 可以使用 conda 来安装、更新 、卸载工具包 ，并且它更关注于数据科学相关的工具包。
+* 虚拟环境管理： 在conda中可以建立多个虚拟环境，用于隔离不同项目所需的不同版本的工具包，以防止版本上的冲突。
+
+
+## Anaconda 的优点
+
+> 省时省心、分析利器。
+
+* 省时省心： Anaconda通过管理工具包、开发环境、Python版本，大大简化了你的工作流程。不仅可以方便地安装、更新、卸载工具包，而且安装时能自动安装相应的依赖包，同时还能使用不同的虚拟环境隔离不同要求的项目。
+* 分析利器： 适用于企业级大数据分析的Python工具。其包含了720多个数据科学相关的开源包，在数据可视化、机器学习、深度学习等多方面都有涉及。不仅可以做数据分析，甚至可以用在大数据和人工智能领域。
 
 
 ## Reference
