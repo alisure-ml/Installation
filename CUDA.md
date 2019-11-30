@@ -14,9 +14,38 @@
 sudo sh cuda_9.0.176_384.81_linux.run
 ```
 
-单击回车，一路往下运行，直到提示“是否为NVIDIA安装驱动nvidia-384？”，选择否，因为已经安装好驱动程序了，其他的全都是默认。
+单击回车，一路往下运行。
+```
+Do you accept the previously read EULA?
+accept/decline/quit: accept
 
-不过要记住安装位置，默认是安装在/usr/local/cuda文件夹下。
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81?
+(y)es/(n)o/(q)uit: n  # 选择否，因为已经安装好驱动程序了
+
+Install the CUDA 9.0 Toolkit?
+(y)es/(n)o/(q)uit: y
+
+Enter Toolkit Location
+ [ default is /usr/local/cuda-9.0 ]:  # 记住安装位置， 默认是安装在/usr/local/cuda文件夹下
+
+Do you want to install a symbolic link at /usr/local/cuda?
+(y)es/(n)o/(q)uit: n  # 根据需要选择y或者n
+
+Install the CUDA 9.0 Samples?
+(y)es/(n)o/(q)uit: y
+
+Enter CUDA Samples Location
+ [ default is /home/ubuntun ]: 
+
+Installing the CUDA Toolkit in /usr/local/cuda-9.0 ...
+Missing recommended library: libGLU.so
+Missing recommended library: libXmu.so
+
+Installing the CUDA Samples in /home/ubuntun ...
+Copying samples to /home/ubuntun/NVIDIA_CUDA-9.0_Samples now...
+Finished copying samples.
+```
+
 
 * 配置环境变量，运行如下命令打开profile文件
 
