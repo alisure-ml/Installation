@@ -40,6 +40,12 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 sh ./Anaconda3-2019.07-Linux-x86_64.sh
 ```
 
+有可能需要执行下列命令使环境变量有效：
+
+```
+source ~/.bashrc
+```
+
 * 检查更新
 
 安装完成后，我们还需要对所有工具包进行升级，以避免可能发生的错误。
