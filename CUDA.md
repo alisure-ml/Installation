@@ -117,7 +117,7 @@ cuDNN Developer Library for Ubuntu18.04 (Deb)
 
 4. 一个里版本里面有头文件(在include中)，一个里面有动态连接文件（在lib中）
 
-  * 将`include`中头文件`cudnn.h`拷贝到`/usr/local/cuda/lib64`
+  * 将`include`中头文件`cudnn.h`拷贝到`/usr/local/cuda/include`
   * 将`lib`中的动态连接文件拷贝到`/usr/local/cuda/lib64`
 
 5. 添加环境变量
