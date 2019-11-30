@@ -104,6 +104,8 @@ conda  search search_term
 
 ## 管理Python环境
 
+> 新的环境保存在`/home/ubuntun/anaconda3/envs`或`~/.conda/envs`中
+
 默认的环境是 root，你也可以创建一个新环境：
 
 ```
