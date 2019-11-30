@@ -47,7 +47,9 @@ Finished copying samples.
 ```
 
 
-* 配置环境变量，运行如下命令打开profile文件
+* 配置环境变量，方法一（所有用户，建议使用方法二）：
+
+运行如下命令打开profile文件
 
 ```
 sudo gedit /etc/profile
@@ -64,6 +66,27 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
 
 ```
 sudo reboot
+```
+
+* 配置环境变量，方法二（当前用户，建议使用该方法）：
+
+运行如下命令打开.bashrc文件
+
+```
+sudo gedit ~/.bashrc
+```
+
+打开文件后在文件末尾添加路径，也就是安装目录，命令如下：
+
+```
+export PATH=/usr/local/cuda-9.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
+```
+
+保存，然后使之生效:
+
+```
+source ~/.bashrc
 ```
 
 * 测试安装是否成功
@@ -115,4 +138,12 @@ sudo ln -s libcudnn.so.7 libcudnn.so
 ### Pycharm中找不到cuda
 
 参考：[Install_AND_path/无法找到cuda9.0](https://github.com/waallf/Install_AND_path/blob/master/%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0cuda9.0.md)
+
+### ImportError: libcublas.so.x.x: cannot open shared object file: No such file or directory
+
+* 确保安装了对应版本的`CUDA`：否则，回到`安装CUDA`的步骤
+
+* 确保路经在`PATH`环境变量中(`echo $PATH`)：否则，回到安装`配置环境变量`的步骤
+
+* 如果还不行，检查`/usr/local/cuda-x.x/lib64`下是否有libcublas.so.x.x：如果有，则`sudo ldconfig /usr/local/cuda-x.x/lib64`
 
