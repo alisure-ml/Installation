@@ -152,6 +152,24 @@ sudo ln -s libcudnn.so.7 libcudnn.so
 
 > Inference: [Install_AND_path/无法找到cuda9.0](https://github.com/waallf/Install_AND_path/blob/master/%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0cuda9.0.md)
 
+在添加cuda环境变量后，一直无法找到cuda9.0:
+1. 有可能是在sudo下执行的，需要在sudo下添加环境变量
+
+2. 添加lib
+
+打开文件`cuda.conf`：
+```
+sudo gedit /etc/ld.so.conf.d/cuda.conf
+```
+
+添加如下内容并保存：
+```
+/usr/local/cuda/lib64 
+/lib
+/usr/lib
+/usr/lib32
+```
+
 
 ### 问题二：ImportError: libcublas.so.x.x: cannot open shared object file: No such file or directory
 
