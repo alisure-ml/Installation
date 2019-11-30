@@ -100,6 +100,14 @@ sudo make
 如果显示关于GPU的信息就是成功了。
 
 
+* 多个`CUDA`之间切换
+
+```
+sudo rm -rf cuda
+sudo ln -s /usr/local/cuda-x.x /usr/local/cuda
+```
+
+
 ### 安装cudnn
 
 > Inference: [Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
