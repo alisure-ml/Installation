@@ -102,7 +102,9 @@ sudo make
 
 ### 安装cudnn
 
-1. 下载对应版本的[cudnn](https://developer.nvidia.com/cudnn)  
+> Inference: [Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
+
+1. 下载对应版本的[cudnn](https://developer.nvidia.com/cudnn)
 
 2. 需要下载两个版本，runtime版和developer版
 
@@ -133,11 +135,11 @@ sudo ln -s libcudnn.so.7 libcudnn.so
 # sudo ln -s libcudnn.so.7.x.x libcudnn.so.7
 ```
 
-参考：[Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
 
 ### 问题一：Pycharm中找不到cuda
 
-参考：[Install_AND_path/无法找到cuda9.0](https://github.com/waallf/Install_AND_path/blob/master/%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0cuda9.0.md)
+> Inference: [Install_AND_path/无法找到cuda9.0](https://github.com/waallf/Install_AND_path/blob/master/%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0cuda9.0.md)
+
 
 ### 问题二：ImportError: libcublas.so.x.x: cannot open shared object file: No such file or directory
 
