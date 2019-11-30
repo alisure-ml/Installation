@@ -141,6 +141,8 @@ sudo ln -s libcudnn.so.7 libcudnn.so
 
 ### 问题二：ImportError: libcublas.so.x.x: cannot open shared object file: No such file or directory
 
+> Inference: [ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory](https://blog.csdn.net/qq_34374211/article/details/81018320)
+
 * 确保安装了对应版本的`CUDA`：否则，回到`安装CUDA`的步骤
 
 * 确保路经在`PATH`环境变量中(`echo $PATH`)：否则，回到安装`配置环境变量`的步骤
