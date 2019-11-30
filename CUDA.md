@@ -122,9 +122,21 @@ cuDNN Developer Library for Ubuntu18.04 (Deb)
 
 5. 添加环境变量
 
+> 如果添加过环境变量，就可以不添加。可以通过`echo $LD_LIBRARY_PATH`查看是否添加。
+
+运行如下命令打开.bashrc文件
 ```
 sudo gedit ~/.bashrc
+```
+
+打开文件后在文件末尾添加路径，也就是安装目录，命令如下：
+```
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+
+保存，然后使之生效:
+```
+source ~/.bashrc
 ```
 
 6. 对拷贝进来的两个动态连接库创建软链接
