@@ -6,7 +6,7 @@
 可以参考：[Installation/NVIDIA.md](https://github.com/alisure-ml/Installation/blob/master/NVIDIA.md)
 
 
-### CUDA
+### 安装CUDA
 
 * 下载完CUDA 9.0之后执行如下语句，运行.run文件
 
@@ -15,6 +15,7 @@ sudo sh cuda_9.0.176_384.81_linux.run
 ```
 
 单击回车，一路往下运行。
+
 ```
 Do you accept the previously read EULA?
 accept/decline/quit: accept
@@ -45,7 +46,6 @@ Installing the CUDA Samples in /home/ubuntun ...
 Copying samples to /home/ubuntun/NVIDIA_CUDA-9.0_Samples now...
 Finished copying samples.
 ```
-
 
 * 配置环境变量，方法一（所有用户，建议使用方法二）：
 
@@ -135,11 +135,11 @@ sudo ln -s libcudnn.so.7 libcudnn.so
 
 参考：[Install_AND_path/install nvidiaDriver_cuda_cudnn.md](https://github.com/waallf/Install_AND_path/blob/master/install%20nvidiaDriver_cuda_cudnn.md)
 
-### Pycharm中找不到cuda
+### 问题一：Pycharm中找不到cuda
 
 参考：[Install_AND_path/无法找到cuda9.0](https://github.com/waallf/Install_AND_path/blob/master/%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0cuda9.0.md)
 
-### ImportError: libcublas.so.x.x: cannot open shared object file: No such file or directory
+### 问题二：ImportError: libcublas.so.x.x: cannot open shared object file: No such file or directory
 
 * 确保安装了对应版本的`CUDA`：否则，回到`安装CUDA`的步骤
 
