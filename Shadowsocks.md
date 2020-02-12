@@ -5,6 +5,8 @@
 
 * [https://www.vultr.com/](https://www.vultr.com/), [https://my.vultr.com/](https://my.vultr.com/)
 
+* 注册（562282219@qq.com, a*A）
+
 * 充值
 
 * 选择最便宜的服务器并部署
