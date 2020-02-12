@@ -87,7 +87,7 @@ nohup ssserver -c /etc/shadowsocks.json &
 
 * 下载插件`SwitchyOmega`
 
-* 设置插件即可
+* 选择`系统代理`即可，如果不想使用则选择`直接代理`。
 
 
 
