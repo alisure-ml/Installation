@@ -42,6 +42,12 @@ firewall-cmd --reload
 
 * `pip install shadowsocks`
 
+
+* 修改`openssl.py`文件：`vim /usr/local/lib/python3.6/site-packages/shadowsocks/crypto/openssl.py`
+
+将所有`EVP_CIPHER_CTX_cleanup`替换成为`EVP_CIPHER_CTX_reset`（有两处）。
+
+
 * `vim /etc/shadowsocks.json`
 
 ```
