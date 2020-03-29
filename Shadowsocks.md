@@ -6,6 +6,21 @@
 > 到vultr上开一台服务器，然后下载东西，使用SSH传过来。
 
 
+* wget
+
+`wget xxx`
+
+* curl
+
+`curl xxx --output xxx`
+
+* axel
+
+```
+sudo apt-get install axel
+axel xxx
+```
+
 
 ## 购买国外服务器
 
