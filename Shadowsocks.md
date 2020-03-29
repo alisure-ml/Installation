@@ -1,6 +1,12 @@
 ## Shadowsocks的使用
 
 
+## 目前方案
+
+> 到vultr上开一台服务器，然后下载东西，使用SSH传过来。
+
+
+
 ## 购买国外服务器
 
 * [https://www.vultr.com/](https://www.vultr.com/), [https://my.vultr.com/](https://my.vultr.com/)
