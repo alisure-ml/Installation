@@ -25,6 +25,13 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /u
 
 方法二：创建软链接：
 ```
+sudo ln -s /usr/bin/gcc-8 /usr/bin/gcc -f
+sudo ln -s /usr/bin/gcc-ar-8 /usr/bin/gcc-ar -f
+sudo ln -s /usr/bin/gcc-nm-8 /usr/bin/gcc-nm -f
+sudo ln -s /usr/bin/gcc-ranlib-8 /usr/bin/gcc-ranlib -f
+````
+
+```
 sudo ln -s /usr/bin/gcc-7 /usr/bin/gcc -f
 sudo ln -s /usr/bin/gcc-ar-7 /usr/bin/gcc-ar -f
 sudo ln -s /usr/bin/gcc-nm-7 /usr/bin/gcc-nm -f
