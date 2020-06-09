@@ -10,3 +10,5 @@
 
 * [在Ubuntu下搭建C/C++编程环境](https://blog.csdn.net/weixin_35477207/article/details/78165411)
 
+* [gcc: error trying to exec 'cc1plus': execvp: 没有那个文件或目录](https://blog.csdn.net/junweicn/article/details/80942928)
+
