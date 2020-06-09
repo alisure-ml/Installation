@@ -13,4 +13,3 @@
 * [gcc: error trying to exec 'cc1plus': execvp: 没有那个文件或目录](https://blog.csdn.net/junweicn/article/details/80942928)
 
 * [ubuntu vscode上使用cmake、编译、调试](https://www.cnblogs.com/civftor/p/9860885.html)
-
