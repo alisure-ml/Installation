@@ -18,7 +18,7 @@
 
 3. 性能测试代码
 
-[ImageNet training in PyTorch](https://github.com/pytorch/examples/tree/master/imagenet)
+* [ImageNet training in PyTorch](https://github.com/pytorch/examples/tree/master/imagenet)
 
 
 
