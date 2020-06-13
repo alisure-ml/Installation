@@ -12,6 +12,11 @@
 
 启动系统后会自动弹出更新软件，或者到设置中进行更新检查。
 
+* 更新Source
+
+[apt更改为国内源](https://www.jianshu.com/p/71ddb83adc1e)
+
+
 * 安装`vim`,`gcc`,`make`,`lightdm`,`git`
 
 ```
@@ -25,10 +30,9 @@ sudo apt install git
 * 更新`apt`
 
 ```
-sudo apt-get install update
-sudo apt-get install upgrade
+sudo apt-get update
+sudo apt-get upgrade
 ```
-
 
 
 ## 安装Anaconda.md
@@ -137,4 +141,8 @@ pip install torch torchvision
 import torch
 print(torch.cuda.is_available())
 ```
+
+## Problem
+
+* [Ubuntu安装软件时Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)的解决方案](https://blog.csdn.net/qq_22999067/article/details/92851100)
 
