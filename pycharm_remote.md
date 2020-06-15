@@ -9,7 +9,7 @@ sudo apt install openssh-server
 ```
 
 
-## 客户端
+## 客户端(PyCharm 2017)
 
 1. GitHub上新建项目并在PC端下载项目
 
@@ -64,5 +64,10 @@ if __name__ == '__main__':
 ```
 os.platform=Linux-4.15.0-106-generic-x86_64-with-debian-buster-sid
 ```
+
+
+5. 控制台
+
+> Tools -> Start SSH Session...
 
 
