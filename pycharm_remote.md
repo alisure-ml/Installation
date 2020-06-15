@@ -56,6 +56,9 @@ if __name__ == '__main__':
     pass
 ```
 
+* 上传： Upload to XXXX 即可
+
+
 * 运行：输出类似信息即可
 
 ```
