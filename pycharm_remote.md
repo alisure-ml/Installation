@@ -11,22 +11,15 @@ sudo apt install openssh-server
 
 ## 客户端
 
-1. GitHub上新建项目
+1. GitHub上新建项目并在PC端下载项目
 
-> 由于我的项目都同步到github上，所以先从这里开始。
-
-
-2. PC端下载项目后用pycharm打开
+> 由于我的项目都同步到github上，所以先从这里开始。不在github上，直接下一步即可。
 
 ```
 git clone https://github.com/ALISURE/pycharm_remote_demo.git
 ```
 
-或
-
-```
-在pycharm中打开
-```
+2. 用pycharm打开项目
 
 
 3. 配置
@@ -68,7 +61,5 @@ if __name__ == '__main__':
 ```
 os.platform=Linux-4.15.0-106-generic-x86_64-with-debian-buster-sid
 ```
-
-
 
 
