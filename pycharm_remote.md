@@ -8,6 +8,14 @@
 sudo apt install openssh-server
 ```
 
+| 主机 | 域名 | 负责人 |
+|---|---|---|
+| TitanX + 48core + 256G | titanx.ddns.net | - |
+| TitanX + 48core + 256G | action101.ddns.net | - |
+| RTX2080Ti + 32core + 128G | faceid.ddns.net | - |
+| RTX2080Ti + 32core + 128G | zshot.ddns.net | - |
+
+
 
 ## 客户端(PyCharm 2017)
 
@@ -56,7 +64,7 @@ if __name__ == '__main__':
     pass
 ```
 
-* 上传： Upload to XXXX 即可
+* 上传： 在需要上传的文件上`右键 -> Upload to XXXX` 即可
 
 
 * 运行：输出类似信息即可
