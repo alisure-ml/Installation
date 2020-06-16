@@ -1,5 +1,8 @@
 ## Pycharm远程
 
+> 大家可以编辑修改这个文件，提交Pull requests.
+
+
 ## 服务器端
 
 > 需要有ssh和ssh-server的支持
