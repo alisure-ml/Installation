@@ -1,0 +1,22 @@
+
+## 1
+
+```
+sudo gedit /etc/hosts
+```
+
+```
+140.82.114.10 codeload.github.com
+140.82.114.4 github.com
+199.232.69.194 github.global.ssl.fastly.net
+52.217.18.198 s3.amazonaws.com
+```
+
+
+## 2
+
+```
+sudo /etc/init.d/networking restart
+```
+
+
