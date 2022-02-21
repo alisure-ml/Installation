@@ -1,7 +1,5 @@
 ## Pycharm远程
 
-> 大家可以编辑修改这个文件，提交Pull requests.
-
 
 ## 服务器端
 
@@ -10,6 +8,13 @@
 ```
 sudo apt install openssh-server
 ```
+
+> 若是连接不上，需要启动ssh
+> 
+```
+/etc/init.d/ssh start
+```
+
 
 | 主机 | 域名 | 负责人 |
 |---|---|---|
