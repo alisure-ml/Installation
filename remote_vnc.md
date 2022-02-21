@@ -26,7 +26,7 @@
 4. 设置 `remote-access`
 
 * 命令行中输入：`dconf-editor` 打开 `dconf`
-* 选择 `org->gnome->desktop->peripherals->remote-access` 中取消 `requre-encryption`
+* 选择 `org->gnome->desktop->remote-access` 中取消 `requre-encryption`
 
 5. 获得ip地址
 
