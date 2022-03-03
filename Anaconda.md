@@ -1,5 +1,22 @@
 # Anaconda
 
+## 环境错乱
+
+> [conda环境下pip install 无法安装到指定conda环境中](https://www.cnblogs.com/bigtreei/p/15094293.html)
+
+```
+1. 
+sudo vim /home/ubuntu/.conda/envs/alisure36/lib/python3.6/site.py  #  默认 USER_SITE、USER_BASE 都为None
+USER_SITE = '/home/ubuntu/.conda/envs/alisure36/lib/python3.6/site-packages'
+USER_BASE = '/home/ubuntu/.conda/envs/alisure36'
+
+2. 
+which /home/ubuntu/.conda/envs/alisure36/bin/pip
+
+3. 
+/home/ubuntu/.conda/envs/alisure36/bin/pip install xxx
+```
+
 
 ## 清华大学的源
 
