@@ -1,6 +1,16 @@
 ## Pycharm远程
 
 
+## 在Pycharm中调试python -m
+
+> [在Pycharm中调试python -m](https://muzhan.blog.csdn.net/article/details/120748810?spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7.pc_relevant_antiscan&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-7.pc_relevant_antiscan&utm_relevant_index=11)
+
+1. Script: `torch.distributed.launch`的路径
+2. Script parameters: 所有的参数
+3. Working directory: 待执行脚本的目录
+
+
+
 ## 服务器端
 
 > 需要有ssh和ssh-server的支持
