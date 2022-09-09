@@ -28,7 +28,7 @@ sudo /etc/init.d/networking restart
 > 现象：`ping github.com`不通
 
 
-* 在`C:\Windows\System32\drivers\etchosts`中加入一下内容
+* 在`C:\Windows\System32\drivers\etc\hosts`中加入一下内容
 
 ```
 140.82.113.4 github.com
